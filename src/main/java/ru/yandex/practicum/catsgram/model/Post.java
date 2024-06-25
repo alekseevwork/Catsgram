@@ -10,12 +10,12 @@ import java.time.Instant;
 @Setter
 @EqualsAndHashCode(of = { "id"})
 public class Post {
-    long id;
+    Long id;
     long authorId;
     String description;
     Instant postDate;
 
-    public Post(long id, long authorId, String description, Instant postDate) {
+    public Post(Long id, long authorId, String description, Instant postDate) {
         this.id = id;
         this.authorId = authorId;
         this.description = description;
